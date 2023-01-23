@@ -1,0 +1,32 @@
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    height: 50px;
+    border-radius: 10px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+
+    span{
+      display: flex;
+      align-items: center;
+    }
+
+    svg path {
+      transition: all 0.1s ease;
+    }
+    &:hover {
+      color: orange;
+    }
+    &:hover svg path {
+      stroke: orange;
+    }
+    .icon {
+      font-size: 1.5rem;
+    }
+    .label {
+      font-size: 1rem;
+    }
+  }

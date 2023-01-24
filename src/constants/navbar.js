@@ -1,14 +1,10 @@
 import {
-  MdManageAccounts,
+  MdCategory,
   MdOutlineHome,
+  MdProductionQuantityLimits,
   MdShoppingBag,
-  MdMenu,
 } from "react-icons/md";
 
-import { 
-  BsFillBagCheckFill,
-} from "react-icons/bs";
-  
   export const navBarLinks = [
     {
       id: 1,
@@ -18,20 +14,20 @@ import {
     },
     {
       id: 2,
-      label: "Account",
-      route: "account",
-      icon: <MdManageAccounts />,
+      label: "Categorie",
+      route: "categories",
+      icon: <MdCategory />,
     },
     {
       id: 3,
-      label: "Wishlist",
-      route: "wishlist",
-      icon: <MdShoppingBag />,
+      label: "Prodotti",
+      route: "products",
+      icon: <MdProductionQuantityLimits />,
     },
     {
       id: 4,
       label: "Ordini",
       route: "orders",
-      icon: <BsFillBagCheckFill />,
+      icon: <MdShoppingBag />,
     },
   ];

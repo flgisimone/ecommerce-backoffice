@@ -1,0 +1,44 @@
+.main{
+    width: 80%;
+
+    .containerCategories{
+        width: 100%;
+
+            .imgCategories{
+                width: 100%;
+            }
+
+            .textCategories{
+                margin: 0;
+                padding: 0;
+                align-self: center;
+                font-size: 1.5rem;
+                background-color: rgba(0, 0, 0, 0.521);
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+
+
+@media screen and (min-width: 800px) {
+    .main{
+        width: 90%;
+        display: flex;
+        gap: 1rem;
+    
+        .containerCategories{
+            width: 100%;
+    
+            .imgCategories{
+                width: 100%;
+            }
+
+            .textCategories{
+                font-size: 1.5rem;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.521);
+            }
+        }
+    }
+}

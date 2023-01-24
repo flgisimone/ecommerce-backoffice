@@ -5,14 +5,11 @@
   height: 100vh;
   background-color: #ececec;
   display: flex;
-  height: fit-content;
+  gap: 1rem;
   .sxColumn {
-    width: 15rem;
     height: calc(100vh - $header-height);
   }
   .dxColumn {
     width: 100%;
-    height: calc(100vh - $header-height);
-    height: fit-content;
   }
 }

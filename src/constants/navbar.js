@@ -24,10 +24,4 @@ import {
       route: "products",
       icon: <MdProductionQuantityLimits />,
     },
-    {
-      id: 4,
-      label: "Ordini",
-      route: "orders",
-      icon: <MdShoppingBag />,
-    },
   ];

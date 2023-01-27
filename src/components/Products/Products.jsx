@@ -27,7 +27,6 @@ const Products = () => {
   return (
     <div className={styles.containerProducts}>
         <h2 className={styles.textProduct}>Prodotti</h2>
-        
         <ul className={styles.ulProducts}>
             {
                 products.map((item, index) => (

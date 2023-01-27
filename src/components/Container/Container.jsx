@@ -3,6 +3,7 @@ import styles from "./Container.module.scss";
 import { useState } from 'react';
 import Categories from "../Categories/Categories"
 import Products from "../Products/Products"
+import Home from "../Home/Home";
 
 const Container = () => {
 
@@ -14,7 +15,7 @@ const Container = () => {
         <NavBar setRoute={setRoute} /> {/*passiamo come props setRoute da padre in figlio fino ad arrivare a VoiceMenu, passando da NavBar*/}
       </div>
       <div className={styles.dxColumn}>
-        {route === "home" && <div>Home</div>}
+        {route === "home" && <Home />}
         {route === "categories" && <Categories />}
         {route === "products" && <Products />}
       </div>

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { GET } from '../../utils/http'
 import styles from "./Categories.module.scss"
 import Table from '../Table/Table'
-import Modal from '../Modal/Modal'
+import Title from '../Title/Title'
 
 const Categories = () => {
   const [showModal, setShowModal] = useState(false);
@@ -31,14 +31,13 @@ const Categories = () => {
 
   return (
     <div className={styles.main}>
-      
-    <h1>Categories</h1>
-    <Table
-      categoriesState={categoriesState.categories}
-      loading={categoriesState.loading}
-      getData={getData}
-      setShowModal={setShowModal}
-    />
+      <Title title="Categories" />
+      <Table
+        categoriesState={categoriesState.categories}
+        loading={categoriesState.loading}
+        getData={getData}
+        setShowModal={setShowModal}
+      />
   </div>
   )
 }
